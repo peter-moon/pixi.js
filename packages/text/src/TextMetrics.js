@@ -507,7 +507,7 @@ export default class TextMetrics
      *
      * @static
      * @param {string} font - String representing the style of the font
-     * @return {PIXI.TextMetrics~FontMetrics} Font properties object
+     * @return {PIXI.TextMetrics.FontMetrics} Font properties object
      */
     static measureFont(font)
     {
@@ -629,7 +629,7 @@ export default class TextMetrics
 /**
  * Internal return object for {@link PIXI.TextMetrics.measureFont `TextMetrics.measureFont`}.
  * @class FontMetrics
- * @memberof PIXI.TextMetrics~
+ * @memberof PIXI.TextMetrics
  * @property {number} ascent - The ascent distance
  * @property {number} descent - The descent distance
  * @property {number} fontSize - Font size from ascent to descent
@@ -656,7 +656,7 @@ TextMetrics._canvas = canvas;
 TextMetrics._context = canvas.getContext('2d');
 
 /**
- * Cache of PIXI.TextMetrics~FontMetrics objects.
+ * Cache of {@see PIXI.TextMetrics.FontMetrics} objects.
  * @memberof PIXI.TextMetrics
  * @type {Object}
  * @private

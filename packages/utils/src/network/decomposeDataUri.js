@@ -3,7 +3,8 @@ import { DATA_URI } from '../const';
 /**
  * Typedef for decomposeDataUri return object.
  *
- * @typedef {object} PIXI.utils~DecomposedDataUri
+ * @memberof PIXI.utils
+ * @typedef {object} DecomposedDataUri
  * @property {mediaType} Media type, eg. `image`
  * @property {subType} Sub type, eg. `png`
  * @property {encoding} Data encoding, eg. `base64`
@@ -17,7 +18,7 @@ import { DATA_URI } from '../const';
  * @memberof PIXI.utils
  * @function decomposeDataUri
  * @param {string} dataUri - the data URI to check
- * @return {PIXI.utils~DecomposedDataUri|undefined} The decomposed data uri or undefined
+ * @return {PIXI.utils.DecomposedDataUri|undefined} The decomposed data uri or undefined
  */
 export function decomposeDataUri(dataUri)
 {
