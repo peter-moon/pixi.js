@@ -155,6 +155,12 @@ export default class DisplayObject extends EventEmitter
          * @readonly
          */
         this._destroyed = false;
+
+        /**
+         * used to fast check if a sprite is.. a sprite!
+         * @member {boolean}
+         */
+        this.isSprite = true;
     }
 
     /**

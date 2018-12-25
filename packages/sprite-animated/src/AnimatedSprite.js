@@ -3,8 +3,8 @@ import { Sprite } from '@pixi/sprite';
 import { Ticker, UPDATE_PRIORITY } from '@pixi/ticker';
 
 /**
- * @memberof PIXI.extras.AnimatedSprite
- * @typedef FrameObject
+ * @memberof PIXI.AnimatedSprite
+ * @typedef {object} FrameObject
  * @type {object}
  * @property {PIXI.Texture} texture - The {@link PIXI.Texture} of the frame
  * @property {number} time - the duration of the frame in ms
@@ -23,7 +23,7 @@ import { Ticker, UPDATE_PRIORITY } from '@pixi/ticker';
  *      textureArray.push(texture);
  * };
  *
- * let animatedSprite = new PIXI.extras.AnimatedSprite(textureArray);
+ * let animatedSprite = new PIXI.AnimatedSprite(textureArray);
  * ```
  *
  * The more efficient and simpler way to create an animated sprite is using a {@link PIXI.Spritesheet}
@@ -34,7 +34,7 @@ import { Ticker, UPDATE_PRIORITY } from '@pixi/ticker';
  *
  * function setup() {
  *   let sheet = PIXI.loader.resources["assets/spritesheet.json"].spritesheet;
- *   animatedSprite = new PIXI.extras.AnimatedSprite(sheet.animations["image_sequence"]);
+ *   animatedSprite = new PIXI.AnimatedSprite(sheet.animations["image_sequence"]);
  *   ...
  * }
  * ```

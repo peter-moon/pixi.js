@@ -22,6 +22,7 @@ class Program
     /**
      * @param {string} [vertexSrc] - The source of the vertex shader.
      * @param {string} [fragmentSrc] - The source of the fragment shader.
+     * @param {string} [name] - Name for shader
      */
     constructor(vertexSrc, fragmentSrc, name = 'pixi-shader')
     {
@@ -88,8 +89,8 @@ class Program
      * returns the attribute data from the program
      * @private
      *
-     * @param {webGL-program} [program] - the webgl program
-     * @param {context} [gl] - the webGL context
+     * @param {WebGLProgram} [program] - the webgl program
+     * @param {WebGLRenderingContext} [gl] - the webGL context
      *
      * @returns {object} the attribute data for this program
      */
@@ -173,6 +174,7 @@ class Program
      *
      * @static
      * @constant
+     * @member {string}
      */
     static get defaultVertexSrc()
     {
@@ -184,6 +186,7 @@ class Program
      *
      * @static
      * @constant
+     * @member {string}
      */
     static get defaultFragmentSrc()
     {

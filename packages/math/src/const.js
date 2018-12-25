@@ -1,10 +1,10 @@
 /**
  * Two Pi.
  *
- * @static
- * @constant
- * @memberof PIXI
- * @type {number}
+     * @static
+     * @constant
+     * @memberof PIXI
+     * @type {number}
  */
 export const PI_2 = Math.PI * 2;
 

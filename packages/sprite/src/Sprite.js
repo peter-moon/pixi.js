@@ -165,6 +165,7 @@ export default class Sprite extends Container
 
         /**
          * used to fast check if a sprite is.. a sprite!
+         * @member {boolean}
          */
         this.isSprite = true;
 

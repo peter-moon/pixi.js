@@ -133,7 +133,8 @@ export default class Mesh extends Container
 
     /**
      * To change mesh uv's, change its uvBuffer data and increment its _updateID.
-     * @returns {PIXI.Buffer}
+     * @member {PIXI.Buffer}
+     * @readonly
      */
     get uvBuffer()
     {
@@ -143,7 +144,8 @@ export default class Mesh extends Container
     /**
      * To change mesh vertices, change its uvBuffer data and increment its _updateID.
      * Incrementing _updateID is optional because most of Mesh objects do it anyway.
-     * @returns {PIXI.Buffer}
+     * @member {PIXI.Buffer}
+     * * @readonly
      */
     get verticesBuffer()
     {

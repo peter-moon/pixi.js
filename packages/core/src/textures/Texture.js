@@ -579,6 +579,7 @@ function removeAllHandlers(tex)
  *
  * @static
  * @constant
+ * @member {PIXI.Texture}
  */
 Texture.EMPTY = new Texture(new BaseTexture());
 removeAllHandlers(Texture.EMPTY);
@@ -590,6 +591,7 @@ removeAllHandlers(Texture.EMPTY.baseTexture);
  *
  * @static
  * @constant
+ * @member {PIXI.Texture}
  */
 Texture.WHITE = createWhiteTexture();
 removeAllHandlers(Texture.WHITE);

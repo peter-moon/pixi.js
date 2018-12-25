@@ -26,9 +26,7 @@ import { Container } from '@pixi/display';
 
 const temp = new Float32Array(3);
 
-/**
- * a default shader used by graphics..
- */
+// a default shader used by graphics..
 let defaultShader = null;
 
 /**

@@ -37,7 +37,10 @@ export default class GeometrySystem extends System
         this.hasInstance = true;
 
         /**
-         * A cache of currently bound buffer..
+         * A cache of currently bound buffer,
+         * contains only two members with keys ARRAY_BUFFER and ELEMENT_ARRAY_BUFFER
+         * @member {Object.<number, PIXI.Buffer>}
+         * @readonly
          */
         this.boundBuffers = {};
     }
