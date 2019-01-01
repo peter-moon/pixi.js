@@ -136,7 +136,7 @@ Object.assign(Loader.prototype, EventEmitter.prototype);
  * Collection of all installed `use` middleware for Loader.
  *
  * @static
- * @member {Array<PIXI.Loader.LoaderPlugin>}
+ * @member {Array<PIXI.Loader.LoaderPlugin>} _plugins
  * @memberof PIXI.Loader
  * @private
  */

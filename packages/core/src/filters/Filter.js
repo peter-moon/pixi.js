@@ -263,6 +263,7 @@ export default class Filter extends Shader
  * Used for caching shader IDs
  *
  * @static
+ * @type {object}
  * @private
  */
 Filter.SOURCE_KEY_MAP = {};

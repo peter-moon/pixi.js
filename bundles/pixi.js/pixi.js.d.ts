@@ -3330,6 +3330,7 @@ declare namespace PIXI {
         protected _lastTextureID: number;
 
         clampOffset: number;
+        clampOffset: number;
         clampMargin: number;
 
         texture: Texture;

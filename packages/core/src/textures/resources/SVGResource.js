@@ -4,7 +4,7 @@ import BaseImageResource from './BaseImageResource';
 /**
  * Resource type for SVG elements and graphics.
  * @class
- * @extends PIXI.resources.TextureResource
+ * @extends PIXI.resources.BaseImageResource
  * @memberof PIXI.resources
  * @param {string} source - Base64 encoded SVG element or URL for SVG file.
  * @param {object} [options] - Options to use
@@ -261,10 +261,8 @@ export default class SVGResource extends BaseImageResource
  * RegExp for SVG size.
  *
  * @static
- * @constant
- * @name SVG_SIZE
+ * @constant {RegExp|string} SVG_SIZE
  * @memberof PIXI.resources.SVGResource
- * @type {RegExp|string}
  * @example &lt;svg width="100" height="100"&gt;&lt;/svg&gt;
  */
 SVGResource.SVG_SIZE = /<svg[^>]*(?:\s(width|height)=('|")(\d*(?:\.\d+)?)(?:px)?('|"))[^>]*(?:\s(width|height)=('|")(\d*(?:\.\d+)?)(?:px)?('|"))[^>]*>/i; // eslint-disable-line max-len

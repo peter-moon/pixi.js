@@ -21,7 +21,7 @@ const GLSL_TO_SIZE = {
     sampler2D:  1,
 };
 
-/**
+/*
  * @method mapSize
  * @memberof PIXI.glCore.shader
  * @param type {String}

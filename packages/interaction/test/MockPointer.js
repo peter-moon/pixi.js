@@ -8,7 +8,7 @@ const { shared } = Ticker;
  *
  * @class
  */
-class MockPointer
+export default class MockPointer
 {
     /**
      * @param {PIXI.Container} stage - The root of the scene tree
@@ -316,5 +316,3 @@ class MockPointer
         this.interaction.onPointerUp(this.createEvent('pointerup', x, y, identifier, true));
     }
 }
-
-module.exports = MockPointer;

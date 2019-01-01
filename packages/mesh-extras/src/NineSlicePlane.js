@@ -53,7 +53,6 @@ export default class NineSlicePlane extends SimplePlane
          * The width of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
          * @override
          */
         this._width = this._origWidth;
@@ -62,7 +61,6 @@ export default class NineSlicePlane extends SimplePlane
          * The height of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
          * @override
          */
         this._height = this._origHeight;
@@ -71,8 +69,7 @@ export default class NineSlicePlane extends SimplePlane
          * The width of the left column (a)
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
-         * @override
+         * @private
          */
         this._leftWidth = typeof leftWidth !== 'undefined' ? leftWidth : DEFAULT_BORDER_SIZE;
 
@@ -80,8 +77,7 @@ export default class NineSlicePlane extends SimplePlane
          * The width of the right column (b)
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
-         * @override
+         * @private
          */
         this._rightWidth = typeof rightWidth !== 'undefined' ? rightWidth : DEFAULT_BORDER_SIZE;
 
@@ -89,8 +85,7 @@ export default class NineSlicePlane extends SimplePlane
          * The height of the top row (c)
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
-         * @override
+         * @private
          */
         this._topHeight = typeof topHeight !== 'undefined' ? topHeight : DEFAULT_BORDER_SIZE;
 
@@ -98,8 +93,7 @@ export default class NineSlicePlane extends SimplePlane
          * The height of the bottom row (d)
          *
          * @member {number}
-         * @memberof PIXI.NineSlicePlane#
-         * @override
+         * @private
          */
         this._bottomHeight = typeof bottomHeight !== 'undefined' ? bottomHeight : DEFAULT_BORDER_SIZE;
     }

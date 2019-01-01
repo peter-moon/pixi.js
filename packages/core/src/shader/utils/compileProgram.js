@@ -1,4 +1,4 @@
-/**
+/*
  * @method compileProgram
  * @memberof PIXI.glCore.shader
  * @param gl {WebGLRenderingContext} The current WebGL context {WebGLProgram}

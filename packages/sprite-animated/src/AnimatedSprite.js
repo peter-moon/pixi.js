@@ -3,14 +3,6 @@ import { Sprite } from '@pixi/sprite';
 import { Ticker, UPDATE_PRIORITY } from '@pixi/ticker';
 
 /**
- * @memberof PIXI.AnimatedSprite
- * @typedef {object} FrameObject
- * @type {object}
- * @property {PIXI.Texture} texture - The {@link PIXI.Texture} of the frame
- * @property {number} time - the duration of the frame in ms
- */
-
-/**
  * An AnimatedSprite is a simple way to display an animation depicted by a list of textures.
  *
  * ```js
@@ -55,11 +47,13 @@ export default class AnimatedSprite extends Sprite
         super(textures[0] instanceof Texture ? textures[0] : textures[0].texture);
 
         /**
+         * @type {PIXI.Texture[]}
          * @private
          */
         this._textures = null;
 
         /**
+         * @type {number[]}
          * @private
          */
         this._durations = null;
@@ -414,3 +408,11 @@ export default class AnimatedSprite extends Sprite
         return currentFrame;
     }
 }
+
+/**
+ * @memberof PIXI.AnimatedSprite
+ * @typedef {object} FrameObject
+ * @type {object}
+ * @property {PIXI.Texture} texture - The {@link PIXI.Texture} of the frame
+ * @property {number} time - the duration of the frame in ms
+ */

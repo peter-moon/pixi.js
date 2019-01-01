@@ -14,6 +14,7 @@ export default class TimeLimiter
     {
         /**
          * The maximum milliseconds that can be spent preparing items each frame.
+         * @type {number}
          * @private
          */
         this.maxMilliseconds = maxMilliseconds;

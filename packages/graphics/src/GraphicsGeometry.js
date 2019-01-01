@@ -950,7 +950,7 @@ export default class GraphicsGeometry extends BatchGeometry
  *
  * @memberof PIXI.GraphicsGeometry
  * @static
- * @member {number}
+ * @member {number} BATCHABLE_SIZE
  * @default 100
  */
 GraphicsGeometry.BATCHABLE_SIZE = 100;

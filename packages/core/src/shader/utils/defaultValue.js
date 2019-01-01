@@ -1,4 +1,4 @@
-/**
+/*
  * @method defaultValue
  * @memberof PIXI.glCore.shader
  * @param type {String} Type of value

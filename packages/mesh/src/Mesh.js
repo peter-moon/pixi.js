@@ -476,6 +476,6 @@ export default class Mesh extends Container
  * of the geometry.
  * @memberof PIXI.Mesh
  * @static
- * @member {number}
+ * @member {number} BATCHABLE_SIZE
  */
 Mesh.BATCHABLE_SIZE = 100;

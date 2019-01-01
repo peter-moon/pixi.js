@@ -78,4 +78,3 @@ export default class Buffer
         return new Buffer(data);
     }
 }
-

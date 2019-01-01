@@ -14,6 +14,7 @@ export default class CountLimiter
     {
         /**
          * The maximum number of items that can be prepared each frame.
+         * @type {number}
          * @private
          */
         this.maxItemsPerFrame = maxItemsPerFrame;
